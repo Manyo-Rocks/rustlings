@@ -3,12 +3,13 @@ fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
     } else {
-        1
+        "1"
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    let outcome: &str = foo_if_fizz("fizz");
+    println!("{}", outcome)// You can optionally experiment here.
 }
 
 // TODO: Read the tests to understand the desired behavior.
